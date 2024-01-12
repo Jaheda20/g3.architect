@@ -121,6 +121,7 @@ nav li a{
     display: flex;
     margin-top: 130px;
     gap: 100px;
+    
  }
 
  .feature-content .card{
@@ -135,16 +136,24 @@ nav li a{
     border-left: 5px solid #FF900E;
     padding-left: 20px;
  }
+ .feature-image img{
+    height: 90%;
+    margin-left: 90px;
+ }
  .ten-years-badge{
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
-    width: 342px;
+    width: 340px;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
  }
  .ten-years-badge h2{
     font-size: 4rem;
     color: #FFF;
     text-align: center;
+    margin: 0;
  }
  .ten-years-badge p{
     font-size: 1.6rem;
@@ -153,9 +162,13 @@ nav li a{
  }
 
 /* Fact section */
+.facts{
+    margin-top: 130px;
+}
 .facts-card-container{
     display: flex;
     justify-content: space-around;
+   
     
 }
 .facts-card-container .card{
@@ -194,10 +207,19 @@ nav li a{
 .sponsors-image-container img{
     width: 165px;
 }
+/* footer styles */
+.footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 38px 400px;
+    text-align: center;
+    color: var(--Dark-02, #424242);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 150px 240px 200px 240px;
     
-
-
-
+}
+    
 
 
 
@@ -208,7 +230,7 @@ nav li a{
     header{
         padding:20px;
     }
-    nav, .teams-container, .facts-card-container, .sponsors-image-container{
+    nav, .teams-container, .facts-card-container, .sponsors-image-container, .feature{
         flex-direction: column;
     }
     .teams-image-container{
@@ -218,8 +240,25 @@ nav li a{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .feature-image img{
+        width: 90%;
+        margin-left: 0;
+
+    }
+    .ten-year-badge{
+        position: static;
+        max-width: 200px;
+    }
     .facts-card-container{
         gap: 20px;
+    }
+    .footer{
+       margin: 5px;
+       padding: 5px;
+       max-width: 100%;
+       
+       
+       
     }
 
 
@@ -230,13 +269,18 @@ nav li a{
 
     /* medium devices */
     @media screen and (min-width:576px) and (max-width: 960px) {
-        nav, .teams-container, .sponsors-image-container{
+        nav, .teams-container, .sponsors-image-container, .feature{
             flex-direction: column;
         }
         header{
             padding: 50px;
         }
+        .footer{
+            margin: 3px;
+            padding: 0;
+            max-width: 100%;
+        }
+            
         
     }
-
 
