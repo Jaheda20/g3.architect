@@ -12,14 +12,16 @@ header{
 }
 
 .Primary-button{
-    width: 180px;
-    height: 64px;
-    border: 1px solid #FF900E;
+    /* width: 180px;
+    height: 64px; */
+    padding: 20px 25px;
+    border: 0;
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 nav{
@@ -65,7 +67,36 @@ nav li a{
     font-weight: 400;
     line-height: 26px; 
 }
+.banner-img{
+    margin-top: 30px;
+    width: 100%;
+}
 
+
+
+
+/* Responsive styles */
+/* mobile devices */
+@media screen
+    and (max-width: 576px){
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    }
+
+
+    /* medium devices */
+    @media screen and (min-width:576px) and (max-width: 960px) {
+        nav{
+            flex-direction: column;
+        }
+        header{
+            padding: 50px;
+        }
+    }
 
 
 
