@@ -5,12 +5,12 @@
     font-family: "Work Sans", sans-serif;
 }
 
-/* Header styles */
-header{
-    background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
-}
+.text-light-gray{
+    color: var(--Dark-03, #727272);
+    font-weight: 400;
+    line-height: 26px; 
 
+}
 .Primary-button{
     /* width: 180px;
     height: 64px; */
@@ -23,6 +23,13 @@ header{
     font-weight: 600;
     cursor: pointer;
 }
+/* Header styles */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+
 
 nav{
     display: flex;
@@ -44,7 +51,7 @@ nav li a{
     text-decoration: none;
     color: var(--Dark-02, #424242);
 }
-.nav-title{
+.section-title{
     color: var(--Dark-01, #131313);
     font-size: 2.8rem;
     font-weight: 700;
@@ -62,11 +69,11 @@ nav li a{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-description{
+/* .banner-description{
     color: var(--Dark-03, #727272);
     font-weight: 400;
     line-height: 26px; 
-}
+} */
 .banner-img{
     margin-top: 30px;
     width: 100%;
@@ -109,6 +116,13 @@ nav li a{
     color: #FF900E;
     font-weight: 700;
 }
+
+/* Fact section */
+
+
+
+
+
 
 /* Responsive styles */
 /* mobile devices */
